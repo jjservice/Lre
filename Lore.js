@@ -25,6 +25,12 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks that have to be played
 let track_list = [
     {
+        name: "FUI FUI",
+        artist: "El Poeta",
+        image: "PoetaFuiFuiPic.jpg",
+        path: "EL POETA - FIU FIU.mp3"
+    },
+    {
         name: "Hey mor",
         artist: "Ozuna Ft Feid",
         image: "morpic.jpg",
