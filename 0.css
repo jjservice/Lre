@@ -1,320 +1,169 @@
-*{
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-   .jj2{
+  /* CSS ETC */
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+    body{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border: 20px solid #151618;
+        border-radius: 40px;
+        /* Smoothly transition the background color */
+        transition: background-color .5s;
+        }
+  .jj2{
     margin-bottom: 5%;
     }
-  body{
-      flex-direction: column;
-      height: auto;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      border: 20px solid #151618;
-      border-radius: 40px;
-      /* Smoothly transition the background color */
-      transition: background-color .5s;
-      }
-         /* Using flex with the column direction to
-      align items in a vertical direction */
-      .player {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: whitesmoke;
-        text-shadow: 2px 2px 4px gold;
-        background-color: #15161850;
-        border-radius: 100px;
-        transition: background-color .5s;
-        margin-bottom: 10px;
-        }
-        
-        .player:hover{
-          box-shadow: 2px 6px 10px gold;
-          border-radius: 100%;
-          transform: scale(1.05);
-          background-color: #15161850;
-          transition: box-shadow.5s, transform.5s;
-          cursor: pointer;
-          align-content: center;
-         }
-        
-        .details {
-        font-size: 10px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        color: black;
-        text-shadow: 2px 2px 4px gold;
-        }
-        
-        .track-art {
-        height: 250px;
-        width: 250px;
-        background-image: URL(
-            "https://source.unsplash.com/Qrspubmx6kE/640x360");
-        background-size: cover;
-        background-position: center;
-        border-radius: 100%;
-        }
-        .track-art{
-            box-shadow: 2px 2px 4px goldenrod;
-            border: 0.8em #171a1d solid;
-            box-shadow: 0.8em 0.8em 1.8em #151618,
-                        -0.8em -0.8em 1em #33353b;
-        }
-        .track-art:hover{
-            box-shadow: 1px 2pc 1px goldenrod;
-            transform: scale(1.05);
-        }
-        
-        /* Changing the font sizes to suitable ones */
-        .now-playing {    
-        font-size: 1.3rem;
-        color: white;
-        }
-        
-        .track-name {
-        font-weight: bold;
-        text-shadow: 2px 5px 4px gold;    
-        font-size: 3.5rem;
-        }
-        
-        .track-artist {
-        font-size: 1.8rem;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px gold;
-        }
-        
-        /* Using flex with the row direction to
-        align items in a horizontal direction */
-        .buttons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        }
-        
-        .playpause-track,
-        .prev-track,
-        .next-track {
-        padding: 25px;
-        opacity: 0.8;
-        
-        /* Smoothly transition the opacity */
-        transition: opacity .2s;
-        }
-        
-        /* Change the opacity when mouse is hovered */
-        .playpause-track:hover,
-        .prev-track:hover,
-        .next-track:hover {
-        opacity: 1.0;
-        }
-        
-        /* Define the slider width so that it scales properly */
-        .slider_container {
-        width: 75dvh;
-        max-width: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-        
-        /* Modify the appearance of the slider */
-        .seek_slider, .volume_slider {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        height: 5px;
-        background: black;
-        opacity: 0.7;
-        -webkit-transition: .2s;
-        transition: opacity .2s;
-        }
-        
-        /* Modify the appearance of the slider thumb */
-        .seek_slider::-webkit-slider-thumb,
-        .volume_slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        width: 15px;
-        height: 15px;
-        background: white;
-        cursor: pointer;
-        border-radius: 50%;
-        }
-        
-        /* Change the opacity when mouse is hovered */
-        .seek_slider:hover,
-        .volume_slider:hover {
-        opacity: 1.0;
-        }
-        
-        .seek_slider {
-        width: 60%;
-        }
-        
-        .volume_slider {
-        width: 30%;
-        }
-        
-        .current-time,
-        .total-duration {
-        padding: 10px;
-        }
-        
-        i.fa-volume-down,
-        i.fa-volume-up {
-        padding: 10px;
-        }
-        
-        /* Change the mouse cursor to a pointer
-        when hovered over */
-        i.fa-play-circle,
-        i.fa-pause-circle,
-        i.fa-step-forward,
-        i.fa-step-backward {
-        cursor: pointer;
-        color: black;
-        }
-        /* CSS ETC */
-         h1{
-          margin-top: 5px;
-          margin-bottom: 5%;
-          font-weight: bold;
-          font-size: 80px;
-          color: white;
-          text-shadow: 2px 2px 10px gold;
-          background-color: transparent;
-          letter-spacing: 2px;
-          box-shadow: 5px 15px 15px darkblue;
-          border: 4px solid gold;
-          border-radius: 100%;
-          
-         }
-        h1 ion-icon{
-          color: rgb(255, 253, 222);
-          border-bottom: 2px solid gold;
-          box-shadow: 2px 4px 6px maroon;
-          border-radius: 50px;
-          background-image: url(lollipop_3GIF.gif);
-          background-size: cover;
-          background-color: transparent;
-   
-        }
-        h6{
-          font-size: 25px;
-          font-weight: bold;
-          font-family: 'Times New Roman', Times, serif;
-          color: white;
-          text-shadow: 2px 2px 4px gold;
-          transition: background-color .5s;
-          background-image: url(lollipop_3GIF.gif);
-          background-size: cover;
-          background-position: center;
-          background-color: rgba(0, 0, 0, 0.514);
-          box-shadow: 2px 2px 4px gold;
-          border-radius: 25px;
-        }
-         h6 .icon{
-          color: rgba(255, 217, 0, 0.61);  
-        }
-      
-         .hits-title5{
-          font-size: 35px;
-          background-image: url(MusicGig.gif);
-          background-position: center;
-          background-size: 25%;
-       }
-         .hits-title ion-icon{
-          font-size: 30px;
-          color: gold;
-          text-shadow: 2px 2px 4px gold;
-          transition: color.5s;
-          box-shadow: 2px 2px 4px gold;
-          border-radius: 100%;
-          background-image: url(lollipop_3GIF.gif);
-          background-position: center;
-          background-size: cover;
-          padding: 5px;
-          margin: 5px;
-         }
-         .hits-title2 ion-icon{
-          font-size: 25px;
-          color: gold; 
-         }
-         .hits-title2{
-          color: gold;
-          text-shadow: 3px 3px 3px blue;
-          margin-bottom: 5%;
-         }
-         .navbar{
-          background-image: url(MADDANCINGPIC.gif);
-          background-position: top;
-          border-radius: 20px;
-          box-shadow:2px 2px 4px gold;
-          border:2px solid #33353b;
-          padding: 2%;
-          bottom: 0%;
-      }
-      .navbar1{
-          background-image: url(BRANDSGIFF1.gif);
-          background-position: center;
-          border-radius: 20px;
-          border:2px solid gold;
-          box-shadow:2px 2px 4px gold;
-          padding: 1%; 
-          bottom: 0%;
-      }
-      .navbar2{
-          background-image: url(MADDANCINGPIC.gif);
-          background-position: center;
-          border-radius: 20px;
-          box-shadow:2px 2px 4px gold;
-          border:2px solid #33353b;
-          padding: 2%;
-          bottom: 0%;
-      }
-      .home-btn button{
-        color: rgba(255, 217, 0, 0.61);
-        text-shadow: 2px 2px 10px gold;
-        font-size: 35px;
-        background-color: transparent;
-        box-shadow: 2px 4px 10px darkblue;
-        border-radius: 10px;
-        border: 4px solid goldenrod;
-        padding: 5px;
-        text-shadow: 2px 2px 4px black;
-        transition: background-color 0.3s ease;
-        
-      }
-      .home-btn button:hover{
-        color: gold;
-        box-shadow: 0px 2px 10px gold;
-      }
-      .home-btn{
-        min-height: 5%;
-        margin: 2%;
-        background-image: url(MusicGig.gif);
-        background-position: center;
-        background-size: 100px; 
-        border-radius: 100%;
-          }
+   h1{
+    margin-top: 5px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 2px 10px gold;
+    background-color: transparent;
+    letter-spacing: 2px;
+    box-shadow: 5px 15px 15px darkblue;
+    border: 4px solid gold;
+    border-radius: 100%;
+    
+   }
+  h1 ion-icon{
+    color: rgb(255, 253, 222);
+    border-bottom: 2px solid gold;
+    box-shadow: 2px 4px 6px maroon;
+    border-radius: 50px;
+    background-image: url(lollipop_3GIF.gif);
+    background-size: cover;
+    background-color: transparent;
 
+  }
+  h6{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+    transition: background-color .5s;
+    background-image: url(lollipop_3GIF.gif);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    box-shadow: 2px 2px 4px gold;
+    border-radius: 25px;
+  }
+   h6 .icon{
+    color: rgba(255, 217, 0, 0.61);  
+  }
+
+   .hits-title5{
+    font-size: 35px;
+    background-image: url(MusicGig.gif);
+    background-position: center;
+    background-size: 25%;
+ }
+   .hits-title ion-icon{
+    font-size: 30px;
+    color: gold;
+    text-shadow: 2px 2px 4px gold;
+    transition: color.5s;
+    box-shadow: 2px 2px 4px gold;
+    border-radius: 100%;
+    background-image: url(lollipop_3GIF.gif);
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+    margin: 5px;
+   }
+   .hits-title2 ion-icon{
+    font-size: 25px;
+    color: gold; 
+   }
+   .hits-title2{
+    color: gold;
+    text-shadow: 3px 3px 3px blue;
+    margin-bottom: 5%;
+   }
+   .navbar{
+    background-image: url(MADDANCINGPIC.gif);
+    background-position: top;
+    border-radius: 20px;
+    box-shadow:2px 2px 4px gold;
+    border:2px solid #33353b;
+    padding: 2%;
+    bottom: 0%;
+}
+.navbar1{
+    background-image: url(BRANDSGIFF1.gif);
+    background-position: center;
+    border-radius: 20px;
+    border:2px solid gold;
+    box-shadow:2px 2px 4px gold;
+    padding: 1%; 
+    bottom: 0%;
+}
+.navbar2{
+    background-image: url(MADDANCINGPIC.gif);
+    background-position: center;
+    border-radius: 20px;
+    box-shadow:2px 2px 4px gold;
+    border:2px solid #33353b;
+    padding: 2%;
+    bottom: 0%;
+}
+.home-btn button{
+  color: rgba(255, 217, 0, 0.61);
+  text-shadow: 2px 2px 10px gold;
+  font-size: 35px;
+  background-color: transparent;
+  box-shadow: 2px 4px 10px darkblue;
+  border-radius: 10px;
+  border: 4px solid goldenrod;
+  padding: 5px;
+  text-shadow: 2px 2px 4px black;
+  transition: background-color 0.3s ease;
   
+}
+.home-btn button:hover{
+  color: gold;
+  box-shadow: 0px 2px 10px gold;
+}
+.home-btn{
+  min-height: 5%;
+  margin: 2%;
+  background-image: url(MusicGig.gif);
+  background-position: center;
+  background-size: 100px; 
+  border-radius: 100%;
+    }
+.genre{
+    background-image: url(MusicGig.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
    
-     
-   
-  
-       
-      
-   
-     
-       
-      
-  
+}
+.genre ion-icon{
+    font-size: 40px;
+    color: gold;
+    border: 1px solid darkblue;
+    border-radius: 50px;
+    background-image: url(DANCINGGIF.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.now-playing {    
+    margin-bottom: 3%;
+    }
+
+
+
+
+
