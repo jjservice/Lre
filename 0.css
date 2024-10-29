@@ -8,9 +8,10 @@
     body{
         flex-direction: column;
         height: auto;
+        display: flex;
+        justify-content: center;
         align-items: center;
         text-align: center;
-        justify-content: center;
         border: 20px solid #151618;
         border-radius: 40px;
         /* Smoothly transition the background color */
