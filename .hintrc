@@ -8,6 +8,8 @@
     "axe/name-role-value": "off",
     "meta-charset-utf-8": "off",
     "meta-viewport": "off",
-    "button-type": "off"
+    "button-type": "off",
+    "axe/structure": "off",
+    "no-inline-styles": "off"
   }
 }
