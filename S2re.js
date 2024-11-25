@@ -130,8 +130,8 @@ const songs = [
         "id": 19,
         "name": "Chencho Corleone X Miky Woodz",
         "artist": "Impaciente",
-        "img": "CHENCHOMIKYIMPAPICC.jpg",
-        "music": "Chencho Corleone Miky Woodz Impaciente.mp3"
+        "img": "ImpacienteMikyChenchoPic.jpg",
+        "music": "Chencho Corleone Ft. Miky Woodz - Impaciente.mp3"
     },
     {
         "id": 20,
