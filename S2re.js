@@ -2,10 +2,10 @@
 const songs = [
     {
         "id": 1,
-        "name": "FUI FUI",
-        "artist": "El Poeta",
-        "img": "PoetaFuiFuiPic.jpg",
-        "music": "EL POETA - FIU FIU.mp3"
+        "name": "Hijuela",
+        "artist": "Chencho Corleone",
+        "img": "ChenchoHijuelaPic.jpg",
+        "music": "Chencho Corleone - Hijuela.mp3"
     },
     {
         "id": 2,
