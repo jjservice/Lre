@@ -23,59 +23,59 @@ const songs = [
     },
     {
         "id": 4,
+        "name": "Tiempos de Plan B",
+        "artist": "Maldy",
+        "img": "MaldyTiemplosDeplanBPic.jpg",
+        "music": "Maldy - Tiempos de Plan B.mp3"
+    },
+    {
+        "id": 5,
         "name": "SEXO DESENFRENADO",
         "artist": "Myke Towers",
         "img": "MIKEPIC22222.jpg",
         "music": "Myke Towers - SEXO DESENFRENADO.mp3"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Inocente",
         "artist": "Myke Towers",
         "img": "INOCENTEMIKEPIC.jpg",
         "music": "Myke Towers - Inocente.mp3"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "DINERO y FAMA",
         "artist": "Myke Towers & Omar Montes",
         "img": "MykeDineroYfamaPic.jpg",
         "music": "Myke Towers & Omar Montes - DINERO y FAMA.mp3"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Somos Iguales",
         "artist": "Darell, The Rudeboyz",
         "img": "DARELLOCAPIC.jpg",
         "music": "Darell, The Rudeboyz - Somos Iguales.mp3"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Bellakita",
         "artist": "Conep & Anuel AA",
         "img": "anuelconebellPic.jpg",
         "music": "Conep & Anuel AA - Bellakita.mp3"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Fiel",
         "artist": "Wisin x Jhay Cortez",
         "img": "jhaycowisinfielpic.jpg",
         "music": "Wisin x Jhay Cortez - Fiel.mp3"
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "Amantes y Amigos",
         "artist": "Arcangel x Sech",
         "img": "arcangelsechpicc.jpg",
         "music": "Arcangel x Sech - Amantes y Amigos.mp3"
-    },
-    {
-        "id": 11,
-        "name": "Pierdo La Cabeza",
-        "artist": "Zion & Lennox",
-        "img": "zionlenoxpierdopic.jpg",
-        "music": "Zion & Lennox - Pierdo La Cabeza.mp3"
     },
     {
         "id": 12,
@@ -321,6 +321,13 @@ const songs = [
         "artist": "Jhay Cortez",
         "img": "jhayPic.jpg",
         "music": "Como se siente jhay cortez (audio oficial).mp3"
+    },
+    {
+        "id": 47,
+        "name": "Pierdo La Cabeza",
+        "artist": "Zion & Lennox",
+        "img": "zionlenoxpierdopic.jpg",
+        "music": "Zion & Lennox - Pierdo La Cabeza.mp3"
     }
 
      ];
