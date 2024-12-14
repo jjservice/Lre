@@ -725,6 +725,7 @@ body.lightPlayer .modal-content img {
 
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color: gold;
 }
 details{
   margin: 0% auto;
