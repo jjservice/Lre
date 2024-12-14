@@ -747,6 +747,8 @@ details{
   border-radius: 15px;
   cursor: pointer;
   transition: 1s ease-in-out;
+  opacity: 90%;
+ 
 }
 body.lightPlayer details{
   color: gold;
@@ -754,5 +756,6 @@ body.lightPlayer details{
   border-left: 2px solid rgba(255, 217, 0, 0.856);
   border-right: 2px solid rgba(255, 217, 0, 0.849);
   background-image: none;
+  opacity: 90%;
 }
 
