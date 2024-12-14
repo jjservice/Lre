@@ -42,7 +42,7 @@
     <!-- Add more languages as needed -->
     </select>
 
-
+    
    
       <!-- Song Details -->
       <ul class="current-song-details">
@@ -50,7 +50,18 @@
        <img id="current-song-image" src="MusicGig.gif" alt="Song Image"/>
        <div id="current-song-name"></div>
        <div id="current-artist-name"></div>
-      </ul>  
+      </ul>
+       
+
+      <!-- ADDSSS ADDDSSS -->
+       <details>
+        <summary>Are you looking for something New?</summary>
+      <div class="product">
+        <img src="RedBull-Monster-Brand-Colour-Swap.webp" onclick="openModal(0)">
+      </div>
+    </details>
+
+
 
     <div class="song-list" id="song-list"></div>
 
@@ -85,6 +96,62 @@
    
       </div>
  </div>
+
+
+
+ 
+    <!-- Modal for displaying images -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+      <span class="next" onclick="changeSlide(1)">&#10095;</span>
+      <img id="modal-image" src="" alt="Product Image">
+    </div>
+  </div>
+
+  <script>
+    const productImages = [
+      ["RedBull-Monster-Brand-Colour-Swap.webp", "sechpic2.jpg", "humopic.jpg" ], // Product 0 images
+      ["RedBull-Monster-Brand-Colour-Swap.webp", "sechpic2.jpg", "humopic.jpg" ],// Product 1 images
+    ];
+
+    let currentProductIndex = -1;
+    let currentImageIndex = 0;
+
+    function openModal(productIndex) {
+      currentProductIndex = productIndex;
+      currentImageIndex = 0;
+      showImage();
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    function showImage() {
+      const images = productImages[currentProductIndex];
+      const imageElement = document.getElementById("modal-image");
+      imageElement.src = images[currentImageIndex];
+    }
+
+    function changeSlide(direction) {
+      currentImageIndex += direction;
+      if (currentImageIndex < 0) {
+        currentImageIndex = productImages[currentProductIndex].length - 1;
+      } else if (currentImageIndex >= productImages[currentProductIndex].length) {
+        currentImageIndex = 0;
+      }
+      showImage();
+    }
+
+    // Close the modal when clicked outside
+    window.onclick = function(event) {
+      if (event.target == document.getElementById("myModal")) {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 <script src="S2re.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
