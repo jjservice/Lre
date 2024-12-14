@@ -637,16 +637,19 @@ body.lightPlayer .volume-controls{
 }
 
 
+
 .product img{
+  margin: 0% auto;
   position: relative;
   display: flex;
-  width: 180px;
   height: 180px;
+  width: 180px;
   border: 2px solid lightskyblue;
   padding: 2px;
   border-radius: 15px;
   box-shadow: 0px 3px 10px white;
   margin-bottom: 10px;
+  margin-top: 5px;
   transition: 1s;
 }
 .product img:hover{
@@ -730,14 +733,14 @@ body.lightPlayer .modal-content img {
 details{
   position: relative;
   margin: 0% auto;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-bottom: 5px;
   display: flex;
   color: transparent;
   text-shadow: 2px 2px 4px darkblue;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   border-radius: 15px;
   cursor: pointer;
   transition: 1s ease-in-out;
@@ -755,11 +758,9 @@ details  p{
   background-repeat: no-repeat;
   width: 150px;
   height: 75px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  align-items: right;
-  justify-content: space-between;
-  justify-content: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 15px;
   border: 1px solid lightskyblue;
   transition: 0.5s ease-in-out;
@@ -781,14 +782,13 @@ details a{
 details a input{
   margin: 0% auto;
   position: relative;
-  left: 5px;
   border: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
+  font-size: 15px;
   padding: 5px 10px;
   margin-bottom: 10px;
   background-color: darkblue;
-  border-radius: 20px;
+  border-radius: 25px;
   color: wheat;
   text-shadow: 0px 0px 2px gold;
   border-bottom: 1px solid wheat;
