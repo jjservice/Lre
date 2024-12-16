@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lre111.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+      .current-song-details{
+    margin: 0% auto;
+    background-image: url(lollipop_3GIF.gif);
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    background-blend-mode: color-burn;
+    transition: 1s;
+  }
+  body.lightPlayer .current-song-details{
+    background-image: none;
+    transition: 1s;
+  }
+  
+    </style>
+    <title>LOLLIPOP</title>
+</head>
+<body class="lightPlayer">
+
+<div class="music-player">
+    <h1 class="lolli-title">LOLLIP<ion-icon name="headset-sharp" onclick="toggleClassPlayer()"></ion-icon>P</h1>
+    
+    <input type="text" id="search-input" placeholder=".;.REGGAETON.;." />
+    
+    <button id="voice-search-button">🎙️
+      <audio id="notification-sound" src="Cut-Voice-Notification-Sound.mp3" preload="auto"></audio>
+    </button>
+ 
+  <select id="language-selector">
+    <option value="en-US">English</option>
+    <option value="es-ES">Spanish</option>
+    <option value="fr-FR">French</option>
+    <!-- Add more languages as needed -->
+    </select>
+
+
+               <!-- ADDSSS ADDDSSS -->
+               <details>
+                <summary><p></p></summary>
+              <div class="product">
+                <img src="NikeAirForce1'07-mainPic.png" onclick="openModal(1)">
+              </div>
+              <a href="https://buy.stripe.com/bIY2aX6Xr4qde884gn"><input type="button" value="BUY NOW!"></a>
+              <p class="Shop-Visit-Pic"></p>
+              <a href="https://jjservice.github.io/L-Club-Store/Shopping.html"><input type="button" value="Visit Shop..." class="Go-to-Store-Btn"></a>   
+               </details>
+
+   
+      <!-- Song Details -->
+      <ul class="current-song-details">
+       <div id="current-id"></div>
+       <img id="current-song-image" src="MusicGig.gif" alt="Song Image"/>
+       <div id="current-song-name"></div>
+       <div id="current-artist-name"></div>
+      </ul>  
+
+    <div class="song-list" id="song-list"></div>
+
+    <audio id="audio-player">
+        <source id="audio-source" />
+    </audio>
+     
+     <!-- Progress Bar -->
+     <progress id="progress-bar" value="0" max="100" style="width: 100%; margin-top: 20px;"></progress>
+     
+
+    <div id="audio-controls">
+
+      <button id="mute-button" class="control-btn"><i class="fas fa-volume-up"></i></button>
+        <button id="prev-button" class="control-btn"><i class="fas fa-step-backward"></i></button>
+        <button id="play-pause-button" class="control-btn"><i class="fas fa-play"></i></button>
+        <button id="next-button" class="control-btn"><i class="fas fa-step-forward"></i></button>
+        <button id="random-button" class="control-btn"><i class="fas fa-random"></i></button>
+       
+      </div>
+     
+      <div class="player">
+       <!-- Volume Control -->
+     <ul class="volume-controls">
+      <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" />
+     </ul>
+      
+     
+     <div class="jj-title">JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></div>
+     <div class="homebtn"><a href="https://jjservice.github.io/L2/1.html">
+        <ion-icon name="home"></ion-icon></a></div>
+   
+      </div>
+ </div>
+    <!-- Modal for displaying images -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="next" onclick="changeSlide(1)">&#10095;</span>
+        <img id="modal-image" src="" alt="Product Image">
+      </div>
+    </div>
+  
+    <script>
+       const productImages = [
+        ["#", "#", "#", "#","#" ], // Product 1 images
+        ["NikeAirForce1'07-mainPic.png", "AirforceWhitePi1.png", "AirforceWhitePi2.png", "AirforceWhitePi3.png", "AirforceWhitePi4.png"], // Product 1 images
+      ];
+  
+      let currentProductIndex = -1;
+      let currentImageIndex = 0;
+  
+      function openModal(productIndex) {
+        currentProductIndex = productIndex;
+        currentImageIndex = 0;
+        showImage();
+        document.getElementById("myModal").style.display = "block";
+      }
+  
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+  
+      function showImage() {
+        const images = productImages[currentProductIndex];
+        const imageElement = document.getElementById("modal-image");
+        imageElement.src = images[currentImageIndex];
+      }
+  
+      function changeSlide(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex < 0) {
+          currentImageIndex = productImages[currentProductIndex].length - 1;
+        } else if (currentImageIndex >= productImages[currentProductIndex].length) {
+          currentImageIndex = 0;
+        }
+        showImage();
+      }
+  
+      // Close the modal when clicked outside
+      window.onclick = function(event) {
+        if (event.target == document.getElementById("myModal")) {
+          closeModal();
+        }
+      }
+    </script>
+</body>
+<script src="Lre111.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
+
+
